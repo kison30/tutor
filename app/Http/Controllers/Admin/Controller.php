@@ -40,6 +40,7 @@ class Controller extends BaseController
         $message = array_get($validator,'message',[]);
 
         $result = validator($request->all(),$rules,$message);
+
         if ($result->fails()) {
             throw new \Exception($result->errors()->first(),403);
         }

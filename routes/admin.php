@@ -1,2 +1,2 @@
 <?php
-Route::get('/login', 'IndexController@login');
+Route::post('/login', 'IndexController@login');
