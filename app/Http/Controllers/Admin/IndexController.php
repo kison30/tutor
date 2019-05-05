@@ -6,6 +6,6 @@ class IndexController extends Controller
 {
     public function login()
     {
-        dd(2);
+        return $this->success(['info' => 2],'success');
     }
 }
