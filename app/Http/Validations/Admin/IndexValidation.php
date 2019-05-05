@@ -18,5 +18,6 @@ class IndexValidation
                 'password.required' => '密码必须填'
             ]
         ];
+
     }
 }
