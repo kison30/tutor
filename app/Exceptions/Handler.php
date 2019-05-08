@@ -61,7 +61,7 @@ class Handler extends ExceptionHandler
             return response(['error' => $exception->getExceptions()],500);
         }
         //validation抛出的异常
-        if (!empty($exception)) {
+        if (!empty($exception) && !getenv('APP_DEBUG')) {
             return response()->json([
                 'error' => $exception->getMessage()
             ],$exception->getCode());

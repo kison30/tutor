@@ -10,11 +10,11 @@ class IndexValidation
     {
         return [
             'rules' => [
-                'name'     => 'required',
+                'username' => 'required',
                 'password' => 'required'
             ],
             'message' => [
-                'name.required'     => '用户名必须填',
+                'username.required' => '用户名必须填',
                 'password.required' => '密码必须填'
             ]
         ];
